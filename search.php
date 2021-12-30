@@ -16,28 +16,27 @@
 
 if (isset($_POST['submit']))
 {
-   $search =  $_POST['search'];
+    //print_r($_POST['search']);
+    $search =  $_POST['search'];
 
    $query = " SELECT * FROM posts WHERE post_tags  LIKE '%$search%' ";
 
-   $serach_query = mysqli_query($connection,$query);
+   $searach_query = mysqli_query($connection,$query);
 
-   if(!$serach_query){
+   if(!$searach_query){
        die("QUERY FAILED".mysqli_error($connection));
 
    }
 
-   $count = mysqli_num_rows($serach_query);
+   $count = mysqli_num_rows($searach_query);
 
    if ($count == 0 ){
-
-       echo "<h1> NO RESULTS </h1>";
-
    }
    else {
 
+    echo "<h1>SOME RESULTS</h1>";
 
-    while($row = mysqli_fetch_assoc($serach_query))
+    while($row = mysqli_fetch_assoc($searach_query))
     {
         $post_title = $row['post_title'];
         $post_author = $row['post_author'];

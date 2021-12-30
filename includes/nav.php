@@ -16,7 +16,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav">
 
                   <?php
 
@@ -28,10 +28,21 @@
                       echo "<li > <a href = '#'> $cat_title </a> </li>" ;
                   }
 
-                  
-
-
                   ?>
+
+<li>
+    <a href = 'admin' >Admin</a>
+</li>
+<!--
+<li>
+    <a href = '#' >Services</a>
+</li>
+<li>
+    <a href = '#' >Contacts</a>
+</li>
+                -->
+
+</ul>
 </div>
         </div>
         <!-- /.container -->

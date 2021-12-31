@@ -31,10 +31,11 @@ if (isset($_POST['submit']))
    $count = mysqli_num_rows($searach_query);
 
    if ($count == 0 ){
+    echo "<h1>NO RESULTS</h1>";
    }
    else {
 
-    echo "<h1>SOME RESULTS</h1>";
+    
 
     while($row = mysqli_fetch_assoc($searach_query))
     {

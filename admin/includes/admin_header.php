@@ -1,3 +1,8 @@
+<?php ob_start(); ?>
+
+<?php include "../includes/db.php"; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +14,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Home - Start Bootstrap Template</title>
+    <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/cms/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/cms/css/blog-home.css" rel="stylesheet">
+    <link href="/cms/admin/css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/cms/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 
 
 </head>

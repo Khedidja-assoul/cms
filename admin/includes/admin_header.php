@@ -1,9 +1,7 @@
 <?php ob_start(); ?>
 
 <?php include "../includes/db.php"; ?>
-<?php include "functions.php";?>
-
-
+<?php include "functions.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admin Template</title>
+    <title>Cms Project</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/cms/css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +24,6 @@
 
     <!-- Custom Fonts -->
     <link href="/cms/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 
 
 </head>

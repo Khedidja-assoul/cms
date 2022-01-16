@@ -1,4 +1,8 @@
     <!-- Navigation -->
+
+    <?php include "includes/db.php"; ?>
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,7 +13,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.php">CMS App</a>
             </div>
 
 
@@ -19,7 +23,7 @@
                 <ul class="nav navbar-nav">
 
                     <?php
-
+                    global $connection;
                     $query = "SELECT * FROM categories";
                     $select_all_categories_query = mysqli_query($connection, $query);
                     while ($row = mysqli_fetch_assoc($select_all_categories_query)) {
